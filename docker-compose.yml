@@ -50,7 +50,7 @@ services:
       # More configuration options can be found at https://superdesk.readthedocs.io/en/latest/settings.html
 
   superdesk-client:
-    image: sourcefabricoss/superdesk-client:latest
+    image: cendekiapp/superdesk-client:bri
     environment:
       # If not hosting on localhost, change these lines
       - SUPERDESK_URL=http://localhost:8080/api
