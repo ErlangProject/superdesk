@@ -5,7 +5,7 @@ FROM node:lts AS build
 WORKDIR /tmp/client
 RUN npm install -g grunt-cli
 COPY package.json .
-RUN npm install --no-audit
+RUN npm install --no-audit --legacy-peer-deps --force
 COPY . .
 RUN npx grunt build
 
